@@ -1,11 +1,18 @@
 .party {
-    display: flex;
-    justify-content: center;
     padding: 32px;
+    text-align: center;
 }
 
 .party h3 {
     font-size: 32px;
     border-bottom: 4px solid;
     padding-bottom: 8px;
+    display: inline-block;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

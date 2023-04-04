@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./componentes/Banner/Banner";
 import Formulario from "./componentes/Formulario/Formulario";
 import Party from "./componentes/Party/Party";
+import Footer from "./componentes/Footer/Footer";
 
 function App() {
     const bosses = [
@@ -56,6 +57,7 @@ function App() {
                 sendFormData={(newPartyMember) =>
                     addPartyMember(newPartyMember)
                 }
+                bosses={bosses.map(boss => boss.boss)}
             />
             {bosses.map((boss) => (
                 <Party
@@ -63,8 +65,10 @@ function App() {
                     partyName={boss.boss}
                     primaryColor={boss.primaryColor}
                     secondaryColor={boss.secondaryColor}
+                    partyMembers={partyMembers.filter(partyMember => partyMember.boss === boss.boss)}
                 />
             ))}
+            <Footer/>
         </div>
     );
 }

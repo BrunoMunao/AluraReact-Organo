@@ -1,0 +1,37 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin-top: 5px;
+}
+
+.card .header {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.card img {
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+}
+
+.card .text {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.card .text h4 {
+    color: #E06B69;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.card .text h5 {
+    font-size: 18px;
+}

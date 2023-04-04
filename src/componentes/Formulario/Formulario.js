@@ -11,16 +11,6 @@ const Formulario = (props) => {
     const [image, setImage] = useState('')
     const [boss, setBoss] = useState('')
 
-    const bosses = [
-        'NLucid',
-        'NWill',
-        'HLucid',
-        'HWill',
-        'HLotus',
-        'HDamien',
-        'VHilla'
-    ]
-
     const onSave = (event) => {
         event.preventDefault()
         console.log('Form submitted! =>', nickname, job, image, boss)
@@ -32,6 +22,10 @@ const Formulario = (props) => {
                 boss
             }
         )
+        setNickname('')
+        setJob('')
+        setImage('')
+        setBoss('')
     }
 
     return (
@@ -58,7 +52,7 @@ const Formulario = (props) => {
                 <ListaSuspensa 
                     obrigatorio={true} 
                     label="Boss" 
-                    itens={bosses}
+                    itens={props.bosses}
                     value={boss}
                     onChange = {value => setBoss(value)}/>
                 <Botao>Criar</Botao>
