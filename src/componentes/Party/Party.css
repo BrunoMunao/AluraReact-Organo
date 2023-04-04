@@ -1,0 +1,11 @@
+.party {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.party h3 {
+    font-size: 32px;
+    border-bottom: 4px solid;
+    padding-bottom: 8px;
+}
