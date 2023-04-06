@@ -1,3 +1,9 @@
+# organo MapleStory
+
+This application was made for Alura's React course.
+
+Works as a group organizer for MapleStory bosses
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
